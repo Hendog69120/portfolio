@@ -1,0 +1,240 @@
+/********
+* GLOBAL
+********/
+body {
+	font-family: Montserrat, serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Droid Serif", sans-serif;
+}
+
+/********
+* HEADER
+********/
+.header {
+	height: 700px;
+	background: url(../images/img2.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 0;
+}
+
+.container {
+	max-width: 1440px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.top-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.brand, .logo {
+	width: 79px;
+	height: 28px;
+}
+
+.titles {
+	text-align: center;
+	color: #ffffff;
+}
+
+.titles .page-title {
+	font-size: 40px;
+	font-style: italic;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 50px;
+}
+
+.titles .encourage-title {
+	font-size: 75px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 59px;
+}
+
+.titles  .btn {
+	display: inline-block;
+}
+
+/********
+* MENU
+********/
+
+.menu {
+	display: flex;
+	list-style-type: none;
+}
+
+.menu li a {
+	display: block;
+	padding: 55px 20px;
+	color:  #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background-color .25s ease-in-out;
+}
+
+.menu li a:hover {
+	background-color: rgba(255, 255, 255, .35);
+}
+
+/*about*/
+
+.about-title {
+	text-align: center;
+	font-size: 3em; 
+}
+.about-text {
+	text-align: center;
+	font-size: 1.5em;
+}
+/**********
+COMPONENTS
+**********/
+
+/** LAND **/
+.land {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.land-title {
+	color:  #222222;
+	font-family: Montserrat, serif;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+.land-subtitle {
+	font-family: "Droid Serif", serif;
+	color:  #777777;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+/** BUTTON **/
+.btn {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 25px 49px;
+	text-transform: uppercase;
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+.btn-primary {
+	background-color: grey;
+}
+
+.btn-primary, a.btn-primary {
+	color: #ffffff;
+}
+
+/**PORTFOLIO**/
+#portfolio {
+	background-color: grey;
+}
+.projet__container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 35px 0 0 100px;
+  }
+  .projets__portfolio {
+	width: 20%;
+	margin: 10px;
+	padding: 0;
+	height: 30%;  
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .projets__portfolio img {
+	width : 100%;
+  }
+  
+#contact{
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+}
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
