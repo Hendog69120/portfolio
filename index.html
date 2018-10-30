@@ -5,6 +5,7 @@
 	<title>Nepri portfolio</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<!--link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet"-->
 	<!--link rel="stylesheet" href="fonts/droid_serif/droid_serif.css"-->
 	<!--link rel="stylesheet" href="styles/normalize.css"-->
@@ -26,13 +27,24 @@
 			</div>
 		</div>
 	</header>
-	<section id="#about" class="container">
+	<section id="about" >
 
-		<h2 class="about-title">Biographie</h2>
+		<div class="avatar"></div>
+		<h2 class="about-title">Alpha-Omar BAH</h2>
 
-		<p class="about-text">Salut, je m'appelle Alpha-Omar, j'ai 25 ans et après un parcours en économie-gestion me voilà à présent développeur full-stack javascript (Angular 6) / PHP (Synfony 4) / Wordpress</p>
+		<p class="about-text">Développeur full-stack Angular 6 / PHP (Synfony 4) / Wordpress / MySQL</p>
+
+		<div class="container about-cv">
+			
+			<a href="downloaddoc/CVBAH_OMAR2018.pdf" download="CVBAH_OMAR2018" target=_blank><h4 class="about-cv-title">Visualiser mon CV</h4></a>
+		</div>
 		
 	</section>
+
+	<section id="skills">
+		<h2 class="container skills-title">Mes compétences</h2>
+	</section>
+
 	<section id="portfolio">
 
 			<h2 class="container">Portfolio</h2>
@@ -69,18 +81,18 @@
 					<div class="contact-image">
 						<img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
 					</div>
-					<form method="post">
+					<form method="post" action=""><!--lien du form vers PHP-->
 						<h3>Me contacter</h3>
 					   <div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+									<input type="text" name="txtName" class="form-control" placeholder="Nom *" value="" />
 								</div>
 								<div class="form-group">
-									<input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+									<input type="text" name="txtEmail" class="form-control" placeholder="Email *" value="" />
 								</div>
 								<div class="form-group">
-									<input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+									<input type="text" name="txtPhone" class="form-control" placeholder="Téléphone *" value="" />
 								</div>
 								<div class="form-group">
 									<button type="submit" name="btnSubmit" class="btnContact">Envoyer</button>
@@ -88,7 +100,7 @@
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+									<textarea name="txtMsg" class="form-control" placeholder="Votre message *" style="width: 100%; height: 150px;"></textarea>
 								</div>
 							</div>
 						</div>
