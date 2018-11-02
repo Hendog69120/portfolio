@@ -156,6 +156,52 @@ a.btn {
 .btn-primary, a.btn-primary {
 	color: #ffffff;
 }
+/**SKILLS**/
+#skills {
+	display: block;
+	margin: 20px 10px 10px 5px;
+	background-color: rgb(229, 186, 186);
+}
+.skills-title {
+	text-align: center;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+.row {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/**********/
+
+.skills_logo {
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/**************/
+
+.card {
+	position: relative;
+	padding-top: 20px;
+    padding-left: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
 
 /**PORTFOLIO**/
 #portfolio {
