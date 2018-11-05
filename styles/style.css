@@ -4,6 +4,7 @@
 body {
 	font-family: "Comic Sans MS", "Comic Sans", "cursive";
 	font-size: 16px;
+	background-color: steelblue;
 }
 
 /********
@@ -177,8 +178,7 @@ a.btn {
 .row {
     display: flex; 
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: auto;
 }
 /**********/
 
@@ -214,7 +214,8 @@ img {
 
 /**PORTFOLIO**/
 #portfolio {
-	background-color: grey;
+	background-color: lightblue;
+	padding: 60px 0;
 }
 .portfolio-title {
 	text-align: center;
@@ -227,6 +228,7 @@ img {
 .projet__container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin: 35px 0 0 100px;
   }
   .projets__portfolio {
@@ -242,45 +244,9 @@ img {
   .projets__portfolio img {
 	width : 100%;
   }
-  .infobulle {
-	position: relative;  /* les .infobulle deviennent référents */
-	cursor: help;
-  }
   
-  /* on génère un élément :after lors du survol et du focus :*/
-  
-  .infobulle:hover::after,
-  .infobulle:focus::after {
-	content: attr(aria-label);  /* on affiche aria-label */
-	position: absolute;
-	top: -2.4em;
-	left: 50%;
-	transform: translateX(-50%); /* on centre horizontalement  */
-	z-index: 3; /* pour s'afficher au dessus des éléments en position relative */
-	white-space: nowrap;  /* on interdit le retour à la ligne */
-	padding: 5px 14px;
-	background: #413219;
-	color: #fff;
-	border-radius: 4px;
-	font-size: 1.2rem;
-  }
-  /* on génère un second élément en :before pour la flèche */
-
-[aria-label]:hover:before,
-[aria-label]:focus:before {
-  content: "▼";
-  position: absolute;
-  top: -1em;
-	left: 50%;
-	transform: translateX(-50%); /* on centre horizontalement  */
-  font-size: 20px;
-  color: #413219;
-}
   /**CONTACT**/
 
-#contact{
-    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
-}
 .contact-form{
     background: #fff;
     margin-top: 10%;
