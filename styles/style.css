@@ -298,3 +298,12 @@ img {
     cursor: pointer;
 }
 
+/**FOOT-INFO**/
+#foot-info {
+	background-color: black;
+}
+
+i {
+	margin-left: 4px;
+}
+
